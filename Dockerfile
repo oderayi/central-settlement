@@ -2,7 +2,7 @@ FROM node:10.15.3-alpine
 
 WORKDIR /opt/central-settlement
 
-RUN apk add --no-cache -t build-dependencies git make gcc g++ python libtool autoconf automake \
+RUN apk add --no-cache -t build-dependencies make gcc g++ python libtool autoconf automake \
     && cd $(npm root -g)/npm \
     && npm config set unsafe-perm true
 

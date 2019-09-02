@@ -4,7 +4,7 @@ services:
     build:
       context: .
       cache_from:
-        - mojaloop/central-ledger
+        - mojaloop/central-settlement
     container_name: cs_central-settlement
     links:
       - mysql
